@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+    
+    <head>  
+        
+	   <title>Changing Website Content</title> 
+        
+    </head>
+    
+    <body>
+
+        <p id="text">Hello World</p>
+        
+        <button id="myButton">Change text</button>
+        
+        <p id="secondParagraph">Javascript is...</p>
+        
+        <button id="secondButton">Append text</button>
+        
+        <p id="thirdParagraph">Javascript is...</p>
+        
+        <button id="thirdButton">Append text</button>
+        
+        <p id="fourthParagraph"></p>
+        
+        <button id="fourthButton">See text</button>
+        
+        <script type="text/javascript">
+            
+            document.getElementById("myButton").onclick = function() { 
+                document.getElementById("text").innerHTML= "Hello Jess";
+            }
+            
+            document.getElementById("secondButton").onclick = function() {
+                document.getElementById("secondParagraph").innerHTML = document.getElementById("secondParagraph").innerHTML + "awesome!";
+            }
+            
+            document.getElementById("thirdButton").onclick = function() {
+                document.getElementById("thirdParagraph").innerHTML = "I think " + document.getElementById("thirdParagraph").innerHTML + "awesome!";
+            }
+            
+            document.getElementById("fourthButton").onclick = function() {
+                document.getElementById("fourthParagraph").innerHTML = "I am a magic paragraph that appears when you click the button.";
+            }
+        
+        </script>
+        
+    </body>
+    
+</html>
+
+                        
