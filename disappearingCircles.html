@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+    
+    <head>  
+        
+	   <title>Disappearing Circles</title> 
+        
+        <style type="text/css">
+        
+            .circle {
+                height: 100px;
+                width: 100px;
+                border-radius: 50%;
+                display: inline-block;
+                margin: 25px;
+            }
+            
+            #red {
+                background-color: red;
+            }
+            
+            #blue {
+                background-color: dodgerblue;
+            }
+        
+            #yellow {
+                background-color: yellow;
+            }
+        
+        </style>
+        
+    </head>
+    
+    <body>
+
+            <span class="circle" id="red"></span>
+            <span class="circle" id="blue"></span>
+            <span class="circle" id="yellow"></span>
+
+        
+        <script type="text/javascript">
+
+            document.getElementById("red").onclick = function() {
+                document.getElementById("red").style.display="none";
+            }
+            
+            document.getElementById("blue").onclick = function() {
+                document.getElementById("blue").style.visibility="hidden";
+            }
+            
+            document.getElementById("yellow").onclick = function() {
+                document.getElementById("yellow").style.visibility="hidden";
+            }
+        
+        </script>
+        
+    </body>
+    
+</html>
+
+                        
