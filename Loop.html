@@ -21,8 +21,7 @@
              
             for (i = 0; i < tweets.length; i++) {
                 
-                text += tweets[i] + "<br>";
-                
+                text = text + "<p>" + tweets[i] + "</p>"
             }
             
             document.getElementById("demo").innerHTML = text
