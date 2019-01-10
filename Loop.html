@@ -9,17 +9,23 @@
     
     <body>
 
-
+        <p id="demo"></p>
         
         <script type="text/javascript">
             
-            var tweets = ["Yo", "Yo2", "Yo3"]
+            var tweets = ["Yo", "Yo2", "Yo3"];
+            
+            var text = "";
+            
+            var i;
              
-            for (var i = 0; i < tweets.length; i++) {
+            for (i = 0; i < tweets.length; i++) {
                 
-                alert(tweets[i]);
+                text += tweets[i] + "<br>";
                 
             }
+            
+            document.getElementById("demo").innerHTML = text
         
         </script>
         
