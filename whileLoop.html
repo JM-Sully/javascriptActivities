@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+    
+    <head>  
+        
+	   <title>While Loops</title> 
+        
+    </head>
+    
+     <body>
+
+        <p>Enter the amount of fingers you're holding up below. </p>
+        
+        <p><input type="text" id="myNumber" ></p>
+        <p><button id="myButton">Guess </button></p>
+        
+        <script type="text/javascript">
+            
+            document.getElementById("myButton").onclick = function() {
+                
+                var myNumber = document.getElementById("myNumber").value;
+                
+                var gotIt = false;
+                
+                var numberOfGuesses = 1;
+                
+                while (gotIt == false) {
+                    
+                    var guess = Math.random();
+
+                    guess = guess * 6;
+
+                    guess = Math.floor(guess)
+
+                    if (guess == myNumber) { 
+
+                        gotIt = true;
+                        alert("Got it! It was a " + guess + ". It took me " + numberOfGusses + " to get it right." )
+
+                    } else {
+
+                       numberOfGuesses++;
+                    }
+                }
+            }
+         </script>
+        
+    </body>
+    
+</html>
+
+                        
