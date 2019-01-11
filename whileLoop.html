@@ -11,7 +11,14 @@
 
         <p>Enter the amount of fingers you're holding up below. </p>
         
-        <p><input type="text" id="myNumber" ></p>
+        <select id="myNumber">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+         
+         </select>
         <p><button id="myButton">Guess </button></p>
         
         <script type="text/javascript">
@@ -35,7 +42,7 @@
                     if (guess == myNumber) { 
 
                         gotIt = true;
-                        alert("Got it! It was a " + guess + ". It took me " + numberOfGusses + " to get it right." )
+                        alert("Got it! It was a " + guess + ". It took me " + numberOfGuesses + " to get it right." )
 
                     } else {
 
